@@ -24,7 +24,7 @@ app.post('/contact', (req, res) => {
       
       var mailOptions = {
         from:req.body.email ,
-        to: 'contact@designedanddusted.co.uk',
+        to: 'marwenzbiba4@gmail.com',
         subject: "contact request from : " + req.body.name,
         text:"email : " + req.body.email + "\n" + "phone number : " + req.body.phone + "\n" + "Company: " + req.body.company + "\n" + "message: " + req.body.message 
       };
@@ -50,7 +50,7 @@ app.post('/contact', (req, res) => {
       
       var mailOptions = {
         from:req.body.email ,
-        to: 'contact@designedanddusted.co.uk',
+        to: 'marwenzbiba4@gmail.com',
         subject: "message request from : " + req.body.name,
         text:"email : " + req.body.email + "\n" + "message: " + req.body.message 
       };
