@@ -50,7 +50,7 @@ app.post('/contact', (req, res) => {
       
       var mailOptions = {
         from:req.body.email ,
-        to: 'contact@designedanddusted.co.uk',
+        to: 'soukimahdi@gmail.com',
         subject: "message request from : " + req.body.name,
         text:"email : " + req.body.email + "\n" + "message: " + req.body.message 
       };
