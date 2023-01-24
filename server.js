@@ -24,9 +24,9 @@ app.post('/contact', (req, res) => {
       
       var mailOptions = {
         from:req.body.email ,
-        to: 'contact@designedanddusted.co.uk',
+        to: 'soukimahdi@gmail.com',
         subject: "contact request from : " + req.body.name,
-        text:"phone number : " + req.body.phone + "\n" + "Company: " + req.body.company + "\n" + "message: " + req.body.message 
+        text:"email : " + req.body.email + "\n" + "phone number : " + req.body.phone + "\n" + "Company: " + req.body.company + "\n" + "message: " + req.body.message 
       };
       
       transporter.sendMail(mailOptions, function(error, info){
@@ -36,7 +36,7 @@ app.post('/contact', (req, res) => {
           console.log('Email sent: ' + info.response);
         }
       });
-      res.send();
+      res.send("email sent");
     
   });
   app.post('/sayHi', (req, res) => {
@@ -62,7 +62,7 @@ app.post('/contact', (req, res) => {
           console.log('Email sent: ' + info.response);
         }
       });
-      res.send();
+      res.send("email sent");
     
   });
 
@@ -82,4 +82,4 @@ app.post('/contact', (req, res) => {
 
 
 
-app.listen(process.env.PORT , ()=>{console.log("server is connected")})
+app.listen("5000" , ()=>{console.log("server is connected")})
