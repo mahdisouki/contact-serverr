@@ -82,4 +82,4 @@ app.post('/contact', (req, res) => {
 
 
 
-app.listen("5000" , ()=>{console.log("server is connected")})
+app.listen(process.env.PORT , ()=>{console.log("server is connected")})
